@@ -1,0 +1,54 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   48 out of 2135 | elapsed:    8.1s
+[Parallel(n_jobs=-1)]: Done  138 out of 2135 | elapsed:   15.3s
+[Parallel(n_jobs=-1)]: Done  264 out of 2135 | elapsed:   25.3s
+[Parallel(n_jobs=-1)]: Done  426 out of 2135 | elapsed:   38.5s
+[Parallel(n_jobs=-1)]: Done  624 out of 2135 | elapsed:   56.9s
+[Parallel(n_jobs=-1)]: Done  858 out of 2135 | elapsed:  1.3min
+[Parallel(n_jobs=-1)]: Done 1128 out of 2135 | elapsed:  1.7min
+[Parallel(n_jobs=-1)]: Done 1434 out of 2135 | elapsed:  2.1min
+[Parallel(n_jobs=-1)]: Done 1776 out of 2135 | elapsed:  2.6min
+[Parallel(n_jobs=-1)]: Done 2135 out of 2135 | elapsed:  3.2min finished
+================================================================
+  MAN TÜRKİYE — ML + SİMÜLASYON ENVANTER OPTİMİZASYONU
+================================================================
+
+[ADIM 1] Veri yükleniyor...
+  2135 parça, 36 feature.
+
+[ADIM 3-4] Talep tahmini ve şampiyon seçimi...
+ADIM 3 — ML modelleri eğitiliyor...
+  [RandomForest] hiperparametre optimizasyonu (30 trial)...
+  [RandomForest] tamam — doğrulama WAPE: 26.92%
+  [XGBoost] hiperparametre optimizasyonu (30 trial)...
+  [XGBoost] tamam — doğrulama WAPE: 27.08%
+  [LightGBM] hiperparametre optimizasyonu (30 trial)...
+  [LightGBM] tamam — doğrulama WAPE: 27.20%
+  [CatBoost] hiperparametre optimizasyonu (30 trial)...
+  [CatBoost] tamam — doğrulama WAPE: 26.99%
+ADIM 3 — Klasik yöntemler hesaplanıyor...
+ADIM 4 — Şampiyon yöntem seçimi...
+ADIM 4 — 2135 parça için şampiyon belirlendi.
+Şampiyon dağılımı:
+  RandomForest        : 406
+  CatBoost            : 398
+  HareketliOrtalama   : 371
+  Croston-SBA         : 313
+  LightGBM            : 256
+  XGBoost             : 221
+  UstelDuzeltme       : 170
+
+[ADIM 5-6] 2135 parça için (r,Q) optimizasyonu + EOQ karşılaştırması (paralel)...
+
+[ÇIKTI] Sonuçlar yazılıyor...
+
+================================================================
+  SONUÇ ÖZETİ
+================================================================
+  Optimize edilen parça : 2135
+  Ort. ML servis düzeyi : 96.6%
+  Ort. EOQ servis düzeyi: 100.0%
+  Ort. maliyet tasarrufu: 48.1%
+  Toplam tasarruf       : 2,996,152,294 TL
+  Çalışma süresi        : 781.6 sn
+================================================================

@@ -1,0 +1,88 @@
+{
+  "tuning": {
+    "RandomForest": {
+      "params": {
+        "n_estimators": 147,
+        "max_depth": 20,
+        "min_samples_leaf": 8,
+        "max_features": 0.5
+      },
+      "val_wape": 26.9183283525889
+    },
+    "XGBoost": {
+      "params": {
+        "n_estimators": 418,
+        "max_depth": 7,
+        "learning_rate": 0.026270502516811366,
+        "subsample": 0.6995779135100955,
+        "colsample_bytree": 0.8738445964974806,
+        "reg_lambda": 0.2444436163607056
+      },
+      "val_wape": 27.075068720817306
+    },
+    "LightGBM": {
+      "params": {
+        "n_estimators": 405,
+        "num_leaves": 18,
+        "learning_rate": 0.021014879888418485,
+        "subsample": 0.6080121909938832,
+        "colsample_bytree": 0.9033125486439476,
+        "min_child_samples": 45
+      },
+      "val_wape": 27.19629960589438
+    },
+    "CatBoost": {
+      "params": {
+        "iterations": 478,
+        "depth": 6,
+        "learning_rate": 0.06407998780393385,
+        "l2_leaf_reg": 1.1616568805333802
+      },
+      "val_wape": 26.99116948570036
+    }
+  },
+  "overall": {
+    "CatBoost": {
+      "MAE": 5239.318828898548,
+      "RMSE": 14661.793342097679,
+      "WAPE": 29.512679862922887,
+      "sMAPE": 77.7407152244486
+    },
+    "Croston-SBA": {
+      "MAE": 5807.568322679128,
+      "RMSE": 15964.423220890836,
+      "WAPE": 32.713585541675,
+      "sMAPE": 78.91914935473534
+    },
+    "HareketliOrtalama": {
+      "MAE": 6544.538693728857,
+      "RMSE": 18837.317204333383,
+      "WAPE": 36.86488294111625,
+      "sMAPE": 78.53079916246995
+    },
+    "LightGBM": {
+      "MAE": 5162.588600659131,
+      "RMSE": 14395.183916979917,
+      "WAPE": 29.080464390684675,
+      "sMAPE": 77.9312886127107
+    },
+    "RandomForest": {
+      "MAE": 5144.156766693851,
+      "RMSE": 14403.17216692915,
+      "WAPE": 28.97663928805808,
+      "sMAPE": 75.52158766178057
+    },
+    "UstelDuzeltme": {
+      "MAE": 6551.8615749418295,
+      "RMSE": 18951.184745994804,
+      "WAPE": 36.906132167584516,
+      "sMAPE": 78.48059248200431
+    },
+    "XGBoost": {
+      "MAE": 5304.052285998878,
+      "RMSE": 15073.411001105735,
+      "WAPE": 29.87731844633658,
+      "sMAPE": 74.65305893255454
+    }
+  }
+}

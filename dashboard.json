@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total_parts": 2135,
+    "optimized_parts": 2135,
+    "total_eoq_cost": 6550911497.153038,
+    "total_ml_cost": 3554759203.434945,
+    "total_saving": 2996152293.718093,
+    "avg_pct_saving": 48.07411704662037,
+    "avg_ml_service": 0.9657326187596437,
+    "avg_eoq_service": 0.9999105796719444
+  },
+  "champion_distribution": {
+    "RandomForest": 406,
+    "CatBoost": 398,
+    "HareketliOrtalama": 371,
+    "Croston-SBA": 313,
+    "LightGBM": 256,
+    "XGBoost": 221,
+    "UstelDuzeltme": 170
+  },
+  "segment_distribution": {
+    "CZ": 1010,
+    "CY": 369,
+    "BX": 188,
+    "BY": 183,
+    "CX": 114,
+    "BZ": 110,
+    "AX": 97,
+    "AY": 52,
+    "AZ": 12
+  },
+  "model_group_distribution": {
+    "Global_ML": 999,
+    "Aralıklı_Croston": 907,
+    "Düşük_Hacim_Basit": 214,
+    "Yüksek_Hacim_Ayrı": 15
+  },
+  "method_overall_metrics": {
+    "CatBoost": {
+      "MAE": 5239.318828898548,
+      "RMSE": 14661.793342097679,
+      "WAPE": 29.512679862922887,
+      "sMAPE": 77.7407152244486
+    },
+    "Croston-SBA": {
+      "MAE": 5807.568322679128,
+      "RMSE": 15964.423220890836,
+      "WAPE": 32.713585541675,
+      "sMAPE": 78.91914935473534
+    },
+    "HareketliOrtalama": {
+      "MAE": 6544.538693728857,
+      "RMSE": 18837.317204333383,
+      "WAPE": 36.86488294111625,
+      "sMAPE": 78.53079916246995
+    },
+    "LightGBM": {
+      "MAE": 5162.588600659131,
+      "RMSE": 14395.183916979917,
+      "WAPE": 29.080464390684675,
+      "sMAPE": 77.9312886127107
+    },
+    "RandomForest": {
+      "MAE": 5144.156766693851,
+      "RMSE": 14403.17216692915,
+      "WAPE": 28.97663928805808,
+      "sMAPE": 75.52158766178057
+    },
+    "UstelDuzeltme": {
+      "MAE": 6551.8615749418295,
+      "RMSE": 18951.184745994804,
+      "WAPE": 36.906132167584516,
+      "sMAPE": 78.48059248200431
+    },
+    "XGBoost": {
+      "MAE": 5304.052285998878,
+      "RMSE": 15073.411001105735,
+      "WAPE": 29.87731844633658,
+      "sMAPE": 74.65305893255454
+    }
+  },
+  "tuning_info": {
+    "RandomForest": 26.9183283525889,
+    "XGBoost": 27.075068720817306,
+    "LightGBM": 27.19629960589438,
+    "CatBoost": 26.99116948570036
+  }
+}
